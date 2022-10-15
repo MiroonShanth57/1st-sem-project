@@ -1,0 +1,266 @@
+.btn_Dashboard_MANAGER{
+    -fx-background-color: #6eace3;
+    -fx-font-family: "Cambria Math";
+    -fx-font-size: 15px;
+    -fx-text-fill: #0a0a0a;
+    -fx-background-radius: 15px;
+}
+
+.btn_Dashboard_MANAGER:hover{
+
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-background-color: #697575;
+    -fx-border-color: Black;
+    -fx-border-radius: 15px;
+}
+
+/*////////////////////INVOICE/////////////////////////*/
+
+.btn_Next{
+    -fx-font-family: "Book Antiqua";
+    -fx-background-color: #1251fd;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+}
+
+.btn_Next:hover{
+    -fx-background-color: #76e515;
+    -fx-font-size: 16px;
+    -fx-border-color: white;
+    -fx-text-fill: #000000;
+}
+
+.btn_Confirm{
+    -fx-font-family: "Book Antiqua";
+    -fx-background-color: #75ea62;
+    -fx-font-size: 14px;
+    -fx-text-fill: #000000;
+}
+
+.btn_Confirm:hover{
+    -fx-background-color: #76e515;
+    -fx-font-size: 15px;
+    -fx-border-color: white;
+    -fx-text-fill: #000000;
+}
+
+
+.Invoice_AnchorPane{
+    -fx-background-color: #265fcd;
+    -fx-background-radius: 13px;
+}
+
+.txt_invoice{
+    -fx-font-family: Century;
+    -fx-font-size: 15px;
+    -fx-background-color: #cee5ea;
+    -fx-background-radius: 6px;
+}
+
+.lbl_invoice{
+    -fx-font-family: Century;
+    -fx-font-size: 13px;
+    -fx-background-color: #bec9d0;
+    -fx-background-radius: 6px;
+    -fx-text-fill: #000000;
+}
+
+.btn_validate{
+
+    -fx-background-color: #4579e9;
+    -fx-background-radius: 10px;
+    -fx-font-family: Sylfaen;
+    -fx-font-size: 16px;
+}
+
+.btn_validate:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: #37d92e;
+    -fx-font-size: 17px;
+    -fx-border-color: blue;
+    -fx-border-radius: 10px;
+}
+
+.btn_delivery{
+    -fx-background-color: #964de7;
+    -fx-background-radius: 4px;
+    -fx-font-family: Sylfaen;
+    -fx-font-size: 16px;
+}
+.btn_delivery:hover{
+    -fx-background-radius: 10px;
+    -fx-font-weight: bold;
+    -fx-background-color: #7607ef;
+    -fx-font-size: 17px;
+    -fx-border-color: #fefeff;
+    -fx-border-radius: 10px;
+}
+
+.btn_PRINT{
+    -fx-background-color: #e570ab;
+    -fx-background-radius: 4px;
+    -fx-font-family: Sylfaen;
+    -fx-font-size: 16px;
+}
+
+.btn_PRINT:hover{
+    -fx-background-radius: 10px;
+    -fx-font-weight: bold;
+    -fx-background-color: #ce1ee7;
+    -fx-font-size: 17px;
+    -fx-border-color: #fefeff;
+    -fx-border-radius: 10px;
+}
+
+.table_Invoice{
+    -fx-background-color: #4b7bac;
+    -fx-font-family: Candara;
+    -fx-text-fill: Blue;
+}
+
+.anchorPane_total{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 13px;
+}
+
+.lbl_Total{
+    -fx-font-family: Century;
+    -fx-font-size: 13px;
+    -fx-background-color: #c3dedc;
+    -fx-background-radius: 6px;
+}
+
+.btn_Remove{
+    -fx-background-color: #e22da2;
+    -fx-font-size: 15px;
+
+    -fx-font-family: "Book Antiqua";
+}
+
+.btn_Remove:hover{
+    -fx-background-color: #ee2222;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+/*///////////////////////Delivery//////////////////*/
+.delivery_AnchorPane{
+    -fx-background-color: #df8bf3;
+    -fx-background-radius: 8px;
+}
+
+.txt_Delivery{
+    -fx-background-color: #67ecec;
+    -fx-background-radius: 8px;
+    -fx-text-fill: darkblue;
+
+}
+
+.lbl_Delivery{
+    -fx-background-color: #d0e8ee;
+    -fx-background-radius: 8px;
+    -fx-text-fill: #060666;
+}
+
+.btn_Deliver{
+    -fx-background-color: #49c823;
+    -fx-background-radius: 8px;
+    -fx-font-family: "Arial Black";
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.btn_Deliver:hover{
+    -fx-background-color: #ffffff;
+    -fx-text-fill: black;
+    -fx-border-color: blue;
+    -fx-border-radius: 8px;
+    -fx-font-size: 15px;
+}
+
+.table_Delivery{
+    -fx-background-color: #b1d9d7;
+    -fx-font-family: "Segoe MDL2 Assets";
+    -fx-border-color: blue;
+    -fx-border-radius: 5px;
+}
+
+/*//////////////////payment/////////////*/
+
+.btn_Paid{
+    -fx-background-color: #87e576;
+    -fx-background-radius:8px ;
+    -fx-font-family: "Bodoni MT";
+    -fx-font-size: 18px;
+    -fx-text-fill:Blue ;
+}
+
+.btn_Paid:hover{
+    -fx-background-color: #4fca1e;
+    -fx-border-radius:8px ;
+    -fx-border-color:black ;
+    -fx-font-size: 19px;
+    -fx-text-fill: white;
+}
+.table_payment{
+    -fx-border-color: #34b8be;
+    -fx-border-radius: 4px;
+    -fx-font-family: "Berlin Sans FB Demi";
+    -fx-background-color: #75ced9;
+    -fx-background-radius: 4px;
+}
+
+.payment_AnchorPane{
+    -fx-background-color: #8b918a;
+    -fx-background-radius: 13px;
+}
+
+.txt_Payment{
+    -fx-font-family: Century;
+    -fx-font-size: 15px;
+    -fx-background-color: #cdebf3;
+    -fx-background-radius: 6px;
+}
+
+.lbl_payment{
+    -fx-font-family: Century;
+    -fx-font-size: 13px;
+    -fx-background-color: #9bdede;
+    -fx-background-radius: 6px;
+    -fx-text-fill: #000000;
+}
+
+/*//////////////////////////////Cheque////////////*/
+
+.anchorpane_cheque{
+    -fx-background-radius: 8px;
+    -fx-background-color: #4b4cca;
+}
+
+.text_cheque{
+    -fx-background-color: #84d2d7;
+    -fx-background-radius: 6px;
+    -fx-font-family: "Franklin Gothic Medium Cond";
+}
+
+.lbl_cheque{
+    -fx-background-color: #cbb1db;
+    -fx-background-radius: 6px;
+}
+
+.btn_Cheque{
+    -fx-background-color: #76e9ef;
+    -fx-background-radius: 8px;
+    -fx-font-family: "Book Antiqua";
+    -fx-text-fill: #000000;
+    -fx-font-size: 16px;
+}
+
+.btn_Cheque:hover{
+    -fx-background-color: #1685c4;
+    -fx-background-radius: 8px;
+    -fx-border-color: black;
+    -fx-border-radius: 8px;
+}

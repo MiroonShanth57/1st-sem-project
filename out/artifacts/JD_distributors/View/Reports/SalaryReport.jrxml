@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SalaryReport" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="47cd3880-2b5f-4bcf-8a32-e63de9c1522c">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="JD Connection "/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w1" value="634"/>
+	<property name="com.jaspersoft.studio.property.dataset.dialog.DatasetDialog.sash.w2" value="353"/>
+	<queryString>
+		<![CDATA[select * from salary]]>
+	</queryString>
+	<field name="RoleID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="RoleID"/>
+		<property name="com.jaspersoft.studio.field.label" value="RoleID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="salary"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="BasicSalary" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="BasicSalary"/>
+		<property name="com.jaspersoft.studio.field.label" value="BasicSalary"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="salary"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="MonthlyAdvance" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="MonthlyAdvance"/>
+		<property name="com.jaspersoft.studio.field.label" value="MonthlyAdvance"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="salary"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="SalaryIncrement" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="SalaryIncrement"/>
+		<property name="com.jaspersoft.studio.field.label" value="SalaryIncrement"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="salary"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="SalaryCut" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="SalaryCut"/>
+		<property name="com.jaspersoft.studio.field.label" value="SalaryCut"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="salary"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="FinalSalary" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="FinalSalary"/>
+		<property name="com.jaspersoft.studio.field.label" value="FinalSalary"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="salary"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="SalaryIncrement1" class="java.lang.Integer" resetType="Column" calculation="Count">
+		<variableExpression><![CDATA[$F{SalaryIncrement}]]></variableExpression>
+	</variable>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="124" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="19" width="555" height="40" uuid="07543b87-25d7-4230-93a8-3229ebad8ef0"/>
+				<textElement textAlignment="Center">
+					<font size="25"/>
+				</textElement>
+				<text><![CDATA[JD Distributors ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="49" width="555" height="30" uuid="027e5c75-575a-44a2-8e37-e4ad9543fbcf"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Employee Salary Reports ]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="0" y="57" width="140" height="30" uuid="fd18ccc3-01b0-46ed-8c5c-b405b6e64aff"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="82" width="555" height="4" uuid="0a0ea0b4-5b1b-4e71-b614-487f89bd965e"/>
+			</line>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="42">
+			<staticText>
+				<reportElement x="0" y="0" width="95" height="30" uuid="bbe7ad12-2609-453c-9d95-67a24dfafd4b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d6781c84-bec8-485b-9530-a0dace4188ca"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Bell MT" size="12"/>
+				</textElement>
+				<text><![CDATA[Role ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="95" y="0" width="92" height="30" uuid="34b20d95-f308-42a2-83e8-e21047063d2d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b08d891f-8051-4008-8262-838cd7a582e4"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Bell MT" size="12"/>
+				</textElement>
+				<text><![CDATA[Basic Salary]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="187" y="0" width="92" height="30" uuid="a1e28a44-66c2-4998-aa5f-a912afac2d33">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f18d51b3-58d4-49fe-99b5-647d2c08b86e"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Bell MT" size="12"/>
+				</textElement>
+				<text><![CDATA[Advance]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="0" width="92" height="30" uuid="a7091bd7-d0d6-45b5-9ac6-867324b2562a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="baf3fc8b-848e-4867-ac4f-97bb9b71ca96"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Bell MT" size="12"/>
+				</textElement>
+				<text><![CDATA[Increment]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="371" y="0" width="92" height="30" uuid="e9acae48-da68-43fc-bd22-ade00709fb1b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e2b188a4-2572-40f6-93f0-a3799f3031ab"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Bell MT" size="12"/>
+				</textElement>
+				<text><![CDATA[Deductions]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="463" y="0" width="92" height="30" uuid="a9fbe1b0-3441-40c2-91d1-c7b1c4e211f6">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3677e40b-b5ab-4381-a465-5ea4201c1426"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Bell MT" size="12"/>
+				</textElement>
+				<text><![CDATA[Final Salary]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="44" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="95" height="30" uuid="bd6a14fb-e645-4c7b-a028-710fcfbebefd">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d6781c84-bec8-485b-9530-a0dace4188ca"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Bell MT" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{RoleID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="95" y="0" width="92" height="30" uuid="e37e2623-0cb4-4c37-9cb1-b1214e56398c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b08d891f-8051-4008-8262-838cd7a582e4"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Bell MT" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{BasicSalary}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="187" y="0" width="92" height="30" uuid="b60fd029-37ac-4a57-97f6-7648dcf844d5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f18d51b3-58d4-49fe-99b5-647d2c08b86e"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Bell MT" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MonthlyAdvance}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="0" width="92" height="30" uuid="eee7a7be-324b-491e-8243-f923c545730f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="baf3fc8b-848e-4867-ac4f-97bb9b71ca96"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Bell MT" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SalaryIncrement}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="371" y="0" width="92" height="30" uuid="883a075c-abbb-4acc-86b7-02712162583e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e2b188a4-2572-40f6-93f0-a3799f3031ab"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Bell MT" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{SalaryCut}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="463" y="0" width="92" height="30" uuid="1a8b9499-12d0-4d55-a19f-1d8280c5577d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3677e40b-b5ab-4381-a465-5ea4201c1426"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="Bell MT" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FinalSalary}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="51" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="21" width="555" height="30" uuid="25d38719-7842-4238-b312-a3ec41b1a99e"/>
+				<textElement textAlignment="Left">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[Manager Signature]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

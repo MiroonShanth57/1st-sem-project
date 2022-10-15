@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="600.0" style="-fx-background-color: #b4e5f0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PerfumeFormController">
+   <children>
+      <BorderPane prefHeight="55.0" prefWidth="600.0">
+         <center>
+            <Label id="lbl_2_Title" alignment="CENTER" prefHeight="34.0" prefWidth="220.0" styleClass="lbl_2_Title" stylesheets="@assets/styles/AdminDashBoard.css" text="Inventory" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <Separator prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+      <JFXButton id="btn_List" buttonType="RAISED" layoutX="419.0" layoutY="81.0" onAction="#OpenStock" onMouseClicked="#Open_Stock_Details" prefHeight="24.0" prefWidth="149.0" styleClass="btn_List" stylesheets="@assets/styles/AdminDashBoard.css" text="View List" />
+      <AnchorPane id="text_AnchorPane" layoutX="16.0" layoutY="296.0" onKeyReleased="#Validation_Part" prefHeight="34.0" prefWidth="163.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtPCode" alignment="CENTER" layoutX="18.0" layoutY="2.0" prefHeight="25.0" prefWidth="116.0" promptText="IC-001" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="82.0" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="94.0" layoutY="-8.0" prefHeight="17.0" prefWidth="55.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Code" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="80.0" layoutY="170.0" prefHeight="34.0" prefWidth="127.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXComboBox fx:id="cmbSupplierID" layoutX="18.0" layoutY="3.0" prefHeight="25.0" prefWidth="94.0" promptText="SupplierID" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="267.0" layoutY="170.0" prefHeight="34.0" prefWidth="210.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtSName" alignment="CENTER" layoutX="17.0" layoutY="3.0" prefHeight="25.0" prefWidth="116.0" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="81.0" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="143.0" layoutY="-8.0" prefHeight="17.0" prefWidth="55.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Name" />
+         </children>
+      </AnchorPane>
+      <Label id="lbl_Inventory" alignment="CENTER" layoutX="14.0" layoutY="125.0" prefHeight="24.0" prefWidth="174.0" styleClass="lbl_Inventory" stylesheets="@assets/styles/AdminDashBoard.css" text="Supplier Information" />
+      <Label id="lbl_Inventory" alignment="CENTER" layoutX="21.0" layoutY="238.0" prefHeight="24.0" prefWidth="149.0" styleClass="lbl_Inventory" stylesheets="@assets/styles/AdminDashBoard.css" text="Perfume Details" />
+      <AnchorPane id="text_AnchorPane" layoutX="19.0" layoutY="387.0" onKeyReleased="#Validation_Part" prefHeight="34.0" prefWidth="163.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtUnitPrice" alignment="CENTER" layoutX="17.0" layoutY="3.0" prefHeight="25.0" prefWidth="116.0" promptText="833.60" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" text="000.00" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="81.0" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="99.0" layoutY="-8.0" prefHeight="17.0" prefWidth="55.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Unit Price" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="193.0" layoutY="296.0" onKeyReleased="#Validation_Part" prefHeight="34.0" prefWidth="245.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtPName" alignment="CENTER" layoutX="17.0" layoutY="3.0" prefHeight="25.0" prefWidth="116.0" promptText="Pine" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="81.0" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="175.0" layoutY="-8.0" prefHeight="17.0" prefWidth="55.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Name" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="454.0" layoutY="296.0" onKeyReleased="#Validation_Part" prefHeight="34.0" prefWidth="127.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtPQuantity" alignment="CENTER" layoutX="16.0" layoutY="3.0" prefHeight="25.0" prefWidth="55.0" promptText="00" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="62.0" layoutY="-8.0" prefHeight="17.0" prefWidth="55.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Quantity" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="421.0" layoutY="387.0" onKeyReleased="#Validation_Part" prefHeight="34.0" prefWidth="163.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtSellingPrice" alignment="CENTER" layoutX="17.0" layoutY="3.0" prefHeight="25.0" prefWidth="116.0" promptText="700.00" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" text="000.00" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="81.0" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="79.0" layoutY="-8.0" prefHeight="17.0" prefWidth="75.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Selling Price" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="219.0" layoutY="387.0" onKeyReleased="#Validation_Part" prefHeight="34.0" prefWidth="163.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtMRPPrice" alignment="CENTER" layoutX="17.0" layoutY="3.0" prefHeight="25.0" prefWidth="116.0" promptText="1000.00" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" text="000.00" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="81.0" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="99.0" layoutY="-8.0" prefHeight="17.0" prefWidth="55.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="MRP Price" />
+         </children>
+      </AnchorPane>
+      <JFXButton id="btn_Confirm" buttonType="RAISED" layoutX="256.0" layoutY="462.0" onMouseClicked="#Add_Perfume_InTo_Database" prefHeight="39.0" prefWidth="120.0" styleClass="btn_Confirm2" stylesheets="@assets/styles/AdminDashBoard.css" text="Confirm " />
+      <Separator layoutX="217.0" layoutY="353.0" prefWidth="200.0" />
+      <Label id="lbl_click" alignment="CENTER" layoutX="405.0" layoutY="60.0" prefHeight="17.0" prefWidth="174.0" styleClass="lbl_click" stylesheets="@assets/styles/AdminDashBoard.css" text="Click here to view the stock details" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="580.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ManagerDashboardFormController">
+   <children>
+      <VBox id="buttonPane" prefHeight="555.0" prefWidth="180.0" styleClass="vBox" stylesheets="@assets/styles/AdministratorDashboardForm.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <BorderPane prefHeight="139.0" prefWidth="180.0">
+               <center>
+                  <ImageView fitHeight="85.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@assets/pic/6-removebg-preview.jpg" />
+                     </image>
+                  </ImageView>
+               </center>
+               <bottom>
+                  <Label id="JD" prefHeight="27.0" prefWidth="159.0" styleClass="JD" stylesheets="@assets/styles/AdministratorDashboardForm.css" text="JD DISTRIBUTORS" BorderPane.alignment="CENTER" />
+               </bottom>
+            </BorderPane>
+            <BorderPane prefHeight="42.0" prefWidth="180.0">
+               <center>
+                  <FontAwesomeIcon fill="#d0ff00" iconName="ANGLE_DOWN" size="1.5em" BorderPane.alignment="CENTER" />
+               </center></BorderPane>
+            <JFXButton id="btn_Dashboard_MANAGER" alignment="CENTER" buttonType="RAISED" graphicTextGap="5.0" onMouseClicked="#open_InvoiceForm" prefHeight="27.0" prefWidth="180.0" styleClass="btn_Dashboard_MANAGER" stylesheets="@assets/styles/ManagerDashboard.css" text="   Invoice">
+               <graphic>
+                  <FontAwesomeIcon fill="#c1d1e4" iconName="FILE" />
+               </graphic>
+            </JFXButton>
+            <BorderPane prefHeight="25.0" prefWidth="180.0" />
+            <JFXButton id="btn_Dashboard_MANAGER" alignment="CENTER" buttonType="RAISED" graphicTextGap="5.0" onMouseClicked="#open_DeliveryForm" prefHeight="27.0" prefWidth="180.0" styleClass="btn_Dashboard_MANAGER" stylesheets="@assets/styles/ManagerDashboard.css" text="   Delivery">
+               <graphic>
+                  <FontAwesomeIcon fill="#c1d1e4" iconName="ARCHIVE" />
+               </graphic>
+            </JFXButton>
+            <BorderPane prefHeight="25.0" prefWidth="180.0" />
+            <JFXButton id="btn_Dashboard_MANAGER" alignment="CENTER" graphicTextGap="5.0" onMouseClicked="#open_PaymentForm" prefHeight="27.0" prefWidth="180.0" styleClass="btn_Dashboard_MANAGER" stylesheets="@assets/styles/ManagerDashboard.css" text="   Payment">
+               <graphic>
+                  <FontAwesomeIcon fill="#c1d1e4" iconName="MONEY" text="" />
+               </graphic>
+            </JFXButton>
+            <BorderPane prefHeight="25.0" prefWidth="180.0" />
+            <JFXButton id="btn_Dashboard_MANAGER" alignment="CENTER" buttonType="RAISED" graphicTextGap="5.0" onMouseClicked="#open_ReportsForm" prefHeight="27.0" prefWidth="180.0" styleClass="btn_Dashboard_MANAGER" stylesheets="@assets/styles/ManagerDashboard.css" text="   Reports ">
+               <graphic>
+                  <FontAwesomeIcon fill="#c1d1e4" iconName="FILE_TEXT" />
+               </graphic>
+            </JFXButton>
+            <BorderPane prefHeight="25.0" prefWidth="180.0" />
+            <JFXButton id="btn_Dashboard_MANAGER" alignment="CENTER" buttonType="RAISED" graphicTextGap="5.0" onMouseClicked="#open_ChequeForm" prefHeight="27.0" prefWidth="180.0" styleClass="btn_Dashboard_MANAGER" stylesheets="@assets/styles/ManagerDashboard.css" text="    Cheque">
+               <graphic>
+                  <FontAwesomeIcon fill="#c1d1e4" iconName="PLUS_SQUARE" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Pane fx:id="managerPane_Context" layoutX="219.0" layoutY="43.0" prefHeight="550.0" prefWidth="850.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0">
+         <children>
+            <ImageView fitHeight="545.0" fitWidth="850.0" pickOnBounds="true">
+               <image>
+                  <Image url="@assets/pic/11.png" />
+               </image>
+            </ImageView>
+         </children></Pane>
+      <Pane layoutX="62.0" layoutY="-86.0" prefHeight="35.0" prefWidth="780.0" style="-fx-background-color: #2c3e50;" stylesheets="@assets/styles/AdministratorDashboardForm.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <FontAwesomeIcon accessibleRole="BUTTON" fill="#fffb00" iconName="SIGN_OUT" layoutX="8.0" layoutY="25.0" onMouseClicked="#back_to_welcomeForm" size="1.9em" />
+            <FontAwesomeIcon fill="#e0e6ce" iconName="QUESTION" layoutX="1001.0" layoutY="23.0" size="1.6em" />
+            <Label id="lbl_date_time" fx:id="lblDate" alignment="CENTER" contentDisplay="CENTER" layoutX="695.0" layoutY="9.0" prefHeight="20.0" prefWidth="106.0" styleClass="lbl_date_time" stylesheets="@assets/styles/AdminDashBoard.css" text="12 - 12 - 2222" />
+            <Label id="lbl_date_time" fx:id="lblTime" alignment="CENTER" contentDisplay="CENTER" layoutX="414.0" layoutY="9.0" prefHeight="17.0" prefWidth="81.0" styleClass="lbl_date_time" stylesheets="@assets/styles/AdminDashBoard.css" text="12 : 12 : 12" />
+         </children>
+      </Pane>
+      <Label id="Sing Out" accessibleRole="BUTTON" layoutX="33.0" layoutY="9.0" onMouseClicked="#back_to_welcomeForm" styleClass="Sing_Out" stylesheets="@assets/styles/AdministratorDashboardForm.css" text="SIgn Out" />
+      <Label id="lblVersion " layoutX="3.0" layoutY="563.0" styleClass="lblVersion" stylesheets="@assets/styles/WelcomeForm.css" text="Version 1.0.0" />
+      <Label layoutX="362.0" layoutY="8.0" prefHeight="18.0" prefWidth="96.0" styleClass="lbl_date_time" stylesheets="@assets/styles/AdminDashBoard.css" text="Time :">
+         <padding>
+            <Insets bottom="2.0" />
+         </padding>
+      </Label>
+      <Label layoutX="648.0" layoutY="8.0" prefHeight="18.0" prefWidth="96.0" styleClass="lbl_date_time" stylesheets="@assets/styles/AdminDashBoard.css" text="Date :">
+         <padding>
+            <Insets bottom="2.0" />
+         </padding>
+      </Label>
+   </children>
+</AnchorPane>

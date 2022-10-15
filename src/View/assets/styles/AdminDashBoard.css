@@ -1,0 +1,315 @@
+
+.lbl_date_time{
+    -fx-font-size: 16px;
+    -fx-font-family: Dialog;
+    -fx-text-fill: gold;
+
+}
+
+/*////////////////////////Employee//////////////////////////////////*/
+.lbl_1_Title{
+    -fx-font-family: "Perpetua Titling MT";
+    -fx-font-weight: bold;
+    -fx-font-size: 25px;
+    -fx-text-fill: #2d13d4;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 12px;
+    -fx-background-color: #ddf0ef;
+    -fx-background-radius: 12px;
+}
+
+.text_AnchorPane{
+    -fx-border-radius: 13px;
+    -fx-border-color: black;
+    -fx-background-color: #e4f3f5;
+    -fx-background-radius: 13px;
+}
+
+.textField_text{
+    -fx-text-fill: #0b2a9c;
+}
+
+.lbl_Inventory{
+    -fx-font-family: Sylfaen;
+    -fx-font-size: 18px;
+    -fx-border-color: black;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-background-color: #6bcedb;
+}
+
+.lbl_text{
+    -fx-border-radius: 10px;
+    -fx-border-color: black;
+    -fx-background-radius: 10px;
+    -fx-background-color: #6fc8e8;
+    -fx-font-family: "Tw Cen MT";
+}
+
+.btn_Text{
+    -fx-background-color: #6fc8e8;
+    -fx-background-radius: 12px;
+    -fx-font-family: "Microsoft JhengHei UI";
+}
+
+.btn_Text:hover{
+    -fx-cursor: hand;
+    -fx-background-color:#6fc8e8;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-text-fill: #000000;
+    -fx-border-color: black;
+    -fx-border-radius: 12px;
+}
+
+.lbl_1_2ndTit{
+    -fx-font-family: "Perpetua Titling MT";
+    -fx-font-weight: bold;
+    -fx-font-size: 18px;
+    -fx-text-fill: #493ea8;
+    -fx-border-color: #1d05f7;
+    -fx-border-radius: 12px;
+    -fx-background-color: #ddf0ef;
+    -fx-background-radius: 12px;
+}
+
+.btn_Save{
+    -fx-background-color: #6be880;
+    -fx-background-radius: 6px;
+    -fx-font-size: 13px;
+    -fx-font-family: "Microsoft JhengHei UI";
+    -fx-text-fill: #000000;
+}
+.btn_Save:hover{
+    -fx-cursor: hand;
+    -fx-background-color:#79f06c;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: black;
+    -fx-border-radius: 6px;
+
+}
+
+.btn_Reject{
+    -fx-background-color: #e8808a;
+    -fx-background-radius: 6px;
+    -fx-font-size: 13px;
+    -fx-font-family: "Microsoft JhengHei UI";
+    -fx-text-fill: #000000;
+}
+
+.btn_Reject:hover{
+    -fx-cursor: hand;
+    -fx-background-color:#f21b30;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+    -fx-border-radius: 6px;
+
+}
+
+.btn_modified{
+    -fx-background-color: #7478ed;
+    -fx-background-radius: 6px;
+    -fx-font-size: 13px;
+    -fx-font-family: "Microsoft JhengHei UI";
+    -fx-text-fill: #000000;
+}
+
+.btn_modified:hover{
+    -fx-cursor: hand;
+    -fx-background-color:#080ebd;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-border-color: black;
+    -fx-border-radius: 6px;
+}
+
+.btn_Print_Letter{
+    -fx-background-color: #a249de;
+    -fx-background-radius: 6px;
+    -fx-font-size: 13px;
+    -fx-font-family: "Microsoft JhengHei UI";
+    -fx-text-fill: #000000;
+}
+
+.btn_Print_Letter:hover{
+    -fx-cursor: hand;
+    -fx-background-color:#892cc7;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+    -fx-border-color: black;
+    -fx-border-radius: 6px;
+}
+
+.btn_All{
+    -fx-background-color: #dec045;
+    -fx-background-radius: 6px;
+    -fx-font-size: 13px;
+    -fx-font-family: "Microsoft JhengHei UI";
+    -fx-text-fill: #000000;
+}
+
+.btn_All:hover{
+    -fx-cursor: hand;
+    -fx-background-color:#d4a826;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-border-color: black;
+    -fx-border-radius: 6px;
+}
+/*////////////////////////Perfume//////////////////////////////////*/
+
+.btn_Confirm2{
+    -fx-border-color: Green;
+    -fx-border-radius: 8;
+    -fx-background-color: #a2dedb;
+    -fx-background-radius: 8;
+    -fx-font-family: "Segoe UI Historic";
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.btn_Confirm2:hover{
+    -fx-background-color: #28c976;
+    -fx-font-size: 17px;
+}
+
+.btn_List{
+    -fx-border-color: DarkBlue;
+    -fx-border-radius: 8;
+    -fx-background-color: #363440;
+    -fx-background-radius: 8;
+    -fx-font-family: "Segoe UI Historic";
+    -fx-font-size: 14px;
+    -fx-text-fill: White;
+    -fx-font-weight: bold;
+}
+
+.btn_List:hover{
+    -fx-background-color: #3410e8;
+    -fx-font-size: 15px;
+}
+
+.lbl_click{
+    -fx-border-color: blue;
+    -fx-border-radius: 8;
+    -fx-font-family: "Tw Cen MT";
+
+}
+
+/*////////////////////////Salary//////////////////////////////////*/
+.lbl_2_Title{
+    -fx-font-family: "Perpetua Titling MT";
+    -fx-font-weight: bold;
+    -fx-font-size: 22px;
+    -fx-text-fill: #2d13d4;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 12px;
+    -fx-background-color: #ddf0ef;
+    -fx-background-radius: 12px;
+}
+
+.btn_Confirm{
+    -fx-background-color: #39add9;
+    -fx-background-radius: 8px;
+    -fx-font-size: 16px;
+    -fx-font-family:  "Times New Roman";
+    -fx-text-fill: #000000;
+}
+
+.btn_Confirm:hover{
+    -fx-cursor: hand;
+    -fx-background-color: #38cbcd;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 17px;
+    -fx-border-color: blue;
+    -fx-border-radius: 8px;
+}
+
+.btn_Pay_Sheet{
+    -fx-background-color: #5fc44f;
+    -fx-background-radius: 8px;
+    -fx-font-size: 16px;
+    -fx-font-family:  "Times New Roman";
+    -fx-text-fill: #000000;
+}
+
+.btn_Pay_Sheet:hover{
+    -fx-cursor: hand;
+    -fx-background-color: #2aa426;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 17px;
+    -fx-border-color: blue;
+    -fx-border-radius: 8px;
+}
+
+/*////////////////////////Vehicle//////////////////////////////////*/
+
+/*////////////////////////Reports//////////////////////////////////*/
+.line_Chart{
+    -fx-font-family: "Microsoft JhengHei UI";
+}
+.AnchorPane_report{
+    -fx-border-radius: 10px;
+    -fx-border-color: #0008fa;
+    -fx-background-radius: 9px;
+    -fx-background-color: #05e1f5;
+}
+
+.lbl_Report{
+    -fx-font-size: 15px;
+    -fx-border-color: #0008fa;
+    -fx-border-radius: 10px;
+    -fx-background-color: #8ce5ed;
+    -fx-background-radius: 9px;
+    -fx-font-family: "Segoe UI Historic";
+    -fx-text-fill: darkBlue;
+
+}
+
+.btn_Reports{
+    -fx-border-color: #19e650;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-background-color: #b7edc5;
+    -fx-font-size: 13px;
+    -fx-text-fill: darkBlue;
+}
+
+.btn_Reports:hover{
+    -fx-cursor: hand;
+    -fx-background-color: #74e892;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+}
+
+.btn_Refresh{
+    -fx-background-color: #4bddf1;
+    -fx-background-radius: 8px;
+    -fx-font-size: 15px;
+    -fx-font-family: serif;
+}
+
+.btn_Refresh:hover{
+    -fx-background-color: #234fee;
+    -fx-background-radius: 8px;
+    -fx-border-color: White;
+    -fx-border-radius: 8px;
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+}
+
+.table_All{
+    -fx-font-family: serif;
+    -fx-background-color: #82e0e0;
+    -fx-alignment: CENTER;
+}

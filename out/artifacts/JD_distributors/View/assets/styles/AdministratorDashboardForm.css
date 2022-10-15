@@ -1,0 +1,54 @@
+.vBox{
+    -fx-background-color: #485460;
+}
+
+.JD{
+    -fx-text-fill: Gold;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Times New Roman", Times, serif;
+}
+
+.btn_Dashboard{
+    -fx-font-family: Perpetua;
+    -fx-font-size: 16;
+    -fx-background-radius: 6px;
+    -fx-text-alignment: center;
+    -fx-background-color:#358ade;
+    -fx-border-radius: 6;
+}
+
+.btn_Dashboard:hover{
+    -fx-cursor: hand;
+    -fx-background-color:#00a8ff;
+    -fx-font-weight: bold;
+    -fx-font-size: 17;
+
+}
+.Sing_Out{
+    -fx-font-family: sans-serif;
+    -fx-text-fill: #c1e9e9;
+}
+.Sing_Out:hover{
+    -fx-text-fill: black;
+}
+
+.btn_confirm{
+    -fx-font-family: "Berlin Sans FB Demi";
+    -fx-font-size: 15px;
+    -fx-background-color: #89f879;
+    -fx-background-radius: 9px;
+}
+.btn_confirm:hover{
+    -fx-font-size: 16px;
+    -fx-background-color: #51e53e;
+    -fx-text-fill: white;
+    -fx-border-radius: 9px;
+    -fx-border-color: DarkBlue;
+}
+
+.table_view{
+    -fx-background-color: #8391c6;
+    -fx-font-family: "Sitka Text";
+}
+

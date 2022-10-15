@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Payment" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="81990f9b-2dc7-44f9-85d3-ca884882554f">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="JD Connection "/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<queryString>
+		<![CDATA[select * from Payment]]>
+	</queryString>
+	<field name="InvoiceNumber" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="InvoiceNumber"/>
+		<property name="com.jaspersoft.studio.field.label" value="InvoiceNumber"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="PaymentAmount" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="PaymentAmount"/>
+		<property name="com.jaspersoft.studio.field.label" value="PaymentAmount"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Cash" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="Cash"/>
+		<property name="com.jaspersoft.studio.field.label" value="Cash"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ChequeNumber" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="ChequeNumber"/>
+		<property name="com.jaspersoft.studio.field.label" value="ChequeNumber"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="PaymentCollector" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="PaymentCollector"/>
+		<property name="com.jaspersoft.studio.field.label" value="PaymentCollector"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="payment"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="101" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="-3" width="555" height="49" uuid="fb957482-9836-4ad4-ad6c-2641f0bc28d5"/>
+				<textElement textAlignment="Center">
+					<font size="25"/>
+				</textElement>
+				<text><![CDATA[JD distributors ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="30" width="555" height="30" uuid="85cdc81b-73fb-43db-abcf-ac42e9231b21"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Payment Collection Details]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="71" width="560" height="1" uuid="0120637d-986f-4a88-bd84-fcfa319137be"/>
+			</line>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="10" y="46" width="130" height="30" uuid="0be18641-7fcb-47e0-b59b-912280b9c040"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="39" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="111" height="30" uuid="2c025dee-86d6-4c00-990b-c681083afb35">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c971e927-c1ef-4d4d-9964-826ad7413c16"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[InvoiceNumber]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="0" width="111" height="30" uuid="c4085572-db7a-49fa-ae6d-f837af0b32b4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5d94972f-50c7-4ffe-86d0-e60849e75743"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[PaymentAmount]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="222" y="0" width="111" height="30" uuid="d2d0c23a-a3a3-48b8-81a7-84a31ebef3fb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c43eb809-2faf-47c4-ab30-73f797ac39d5"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Cash]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="0" width="111" height="30" uuid="53c7578e-c745-4503-b695-dafc325622e4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8fdd2d2f-484a-47a3-9c1e-749fe5c7154e"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[ChequeNumber]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="444" y="0" width="111" height="30" uuid="ce9bf22f-911d-42cc-be06-e8baad8c210a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0b8fd2e8-7ee1-4568-a2a6-baeece464220"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[PaymentCollector]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="111" height="30" uuid="9b548593-cac6-4128-940b-f3df9629115e">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c971e927-c1ef-4d4d-9964-826ad7413c16"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{InvoiceNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="0" width="111" height="30" uuid="62f2d32e-dfae-4fca-b28c-86a82276f490">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="5d94972f-50c7-4ffe-86d0-e60849e75743"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PaymentAmount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="222" y="0" width="111" height="30" uuid="ae185cad-3d5c-4db8-9674-80807bccf212">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="c43eb809-2faf-47c4-ab30-73f797ac39d5"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Cash}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="333" y="0" width="111" height="30" uuid="41738dd4-00b3-4e21-a374-dd7db08db588">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8fdd2d2f-484a-47a3-9c1e-749fe5c7154e"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ChequeNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="0" width="111" height="30" uuid="7c4372a8-0065-4c55-a6d2-7961195da664">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="0b8fd2e8-7ee1-4568-a2a6-baeece464220"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PaymentCollector}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="30" y="7" width="493" height="30" uuid="649e2ee2-f00e-4fd8-8210-43ba1824ee36"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<text><![CDATA[Manager Signature]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="55" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

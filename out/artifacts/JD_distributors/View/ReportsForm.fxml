@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="850.0" style="-fx-background-color: #b4e5f0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ReportsFormController">
+   <children>
+      <BorderPane prefHeight="59.0" prefWidth="850.0">
+         <center>
+            <Label id="lbl_1_Title" prefHeight="34.0" prefWidth="301.0" styleClass="lbl_1_Title" stylesheets="@assets/styles/AdminDashBoard.css" text="  Company Reports" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <Separator prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+      <AnchorPane id="AnchorPane_repot" blendMode="COLOR_BURN" layoutX="262.0" layoutY="385.0" prefHeight="40.0" prefWidth="326.0" styleClass="AnchorPane_report" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <Label id="lbl_Report" alignment="CENTER" layoutX="14.0" layoutY="9.0" prefHeight="23.0" prefWidth="177.0" styleClass="lbl_Report" stylesheets="@assets/styles/AdminDashBoard.css" text="Employee Salary Report" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="15.0" />
+            <JFXButton id="btn_Reports" alignment="CENTER" buttonType="RAISED" layoutX="213.0" layoutY="3.0" onAction="#SalaryReport" prefHeight="31.0" prefWidth="108.0" styleClass="btn_Reports" stylesheets="@assets/styles/AdminDashBoard.css" text="View Details" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="3.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="AnchorPane_repot" blendMode="COLOR_BURN" layoutX="262.0" layoutY="120.0" prefHeight="40.0" prefWidth="326.0" styleClass="AnchorPane_report" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <Label id="lbl_Report" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="9.0" prefHeight="23.0" prefWidth="177.0" styleClass="lbl_Report" stylesheets="@assets/styles/AdminDashBoard.css" text="Stock Balance" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="14.0" />
+            <JFXButton id="btn_Reports" alignment="CENTER" buttonType="RAISED" layoutX="213.0" layoutY="3.0" onAction="#StockBalance" prefHeight="31.0" prefWidth="108.0" styleClass="btn_Reports" stylesheets="@assets/styles/AdminDashBoard.css" text="View Details" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="3.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="AnchorPane_repot" blendMode="COLOR_BURN" layoutX="262.0" layoutY="204.0" prefHeight="40.0" prefWidth="326.0" styleClass="AnchorPane_report" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <Label id="lbl_Report" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="9.0" prefHeight="23.0" prefWidth="177.0" styleClass="lbl_Report" stylesheets="@assets/styles/AdminDashBoard.css" text="Monthly Sales" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="15.0" />
+            <JFXButton id="btn_Reports" alignment="CENTER" buttonType="RAISED" layoutX="213.0" layoutY="3.0" onAction="#MonthlySaes" prefHeight="31.0" prefWidth="108.0" styleClass="btn_Reports" stylesheets="@assets/styles/AdminDashBoard.css" text="View Details" AnchorPane.bottomAnchor="6.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="3.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="AnchorPane_repot" blendMode="COLOR_BURN" layoutX="262.0" layoutY="295.0" prefHeight="40.0" prefWidth="326.0" styleClass="AnchorPane_report" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <Label id="lbl_Report" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="9.0" prefHeight="23.0" prefWidth="177.0" styleClass="lbl_Report" stylesheets="@assets/styles/AdminDashBoard.css" text="Payment Collection " />
+            <JFXButton id="btn_Reports" alignment="CENTER" buttonType="RAISED" layoutX="213.0" layoutY="3.0" onAction="#PaymentCollection" prefHeight="31.0" prefWidth="108.0" styleClass="btn_Reports" stylesheets="@assets/styles/AdminDashBoard.css" text="View Details" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

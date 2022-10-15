@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane fx:id="context_Admin" prefHeight="433.0" prefWidth="250.0" style="-fx-background-color: #1e272e;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdministratorLoginFormController">
+   <children>
+      <ImageView fitHeight="63.0" fitWidth="55.0" layoutX="30.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/pic/1.jpg" />
+         </image>
+      </ImageView>
+      <Label id="lblLogin_Text" layoutX="43.0" layoutY="92.0" styleClass="lblWelcomeBack" stylesheets="@assets/styles/WelcomeForm.css" text="Welcome Back" />
+      <Label id="lblLogin_Text" layoutX="46.0" layoutY="122.0" styleClass="lblLogin_Text" stylesheets="@assets/styles/WelcomeForm.css" text="Sign in to continue" />
+      <AnchorPane id="Login_AnchorPane" layoutX="25.0" layoutY="165.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="200.0" styleClass="Login_AnchorPane" stylesheets="@assets/styles/WelcomeForm.css">
+         <children>
+            <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="12.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/pic/9.jpg" />
+               </image>
+            </ImageView>
+            <JFXTextField fx:id="txtAdminUserName" focusColor="#fbc531" layoutX="41.0" layoutY="6.0" promptText="Username" styleClass="textField_Login" stylesheets="@assets/styles/WelcomeForm.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="Login_AnchorPane" layoutX="26.0" layoutY="227.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="200.0" styleClass="Login_AnchorPane" stylesheets="@assets/styles/WelcomeForm.css">
+         <children>
+            <ImageView fitHeight="21.0" fitWidth="24.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/pic/11.jpg" />
+               </image>
+            </ImageView>
+            <JFXPasswordField fx:id="txtAdminPassword" focusColor="#fbc531" layoutX="41.0" layoutY="5.0" promptText="Password" />
+         </children>
+      </AnchorPane>
+      <BorderPane layoutY="339.0" prefHeight="43.0" prefWidth="250.0">
+         <center>
+            <JFXButton id="btnButton" buttonType="RAISED" onAction="#openAdministratorDashboard_onAction" prefHeight="25.0" prefWidth="104.0" styleClass="btnButton" stylesheets="@assets/styles/WelcomeForm.css" text="Sign In" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <Label accessibleRole="BUTTON" alignment="CENTER" layoutX="103.0" layoutY="305.0" onMouseClicked="#open_Account_Create" prefHeight="18.0" prefWidth="114.0" styleClass="lbl_DontHaveAccount" stylesheets="@assets/styles/AdministratorForm.css" text="Don't have account?" />
+      <Label accessibleRole="BUTTON" alignment="CENTER" layoutX="131.0" layoutY="279.0" onMouseClicked="#open_PassWord_Reset_Form" prefHeight="17.0" prefWidth="85.0" styleClass="lbl_forgot_password" stylesheets="@assets/styles/AdministratorForm.css" text="forgot password" />
+      <FontAwesomeIcon accessibleRole="BUTTON" fill="#d9ff00" iconName="ANGLE_DOUBLE_LEFT" layoutX="228.0" layoutY="22.0" onMouseClicked="#back_to_welcome_loginForm" size="1.9em" />
+   </children>
+</AnchorPane>

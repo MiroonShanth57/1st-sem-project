@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="600.0" style="-fx-background-color: #b4e5f0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SalaryFormController">
+   <children>
+      <BorderPane prefHeight="64.0" prefWidth="601.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <center>
+            <Label id="lbl_2_Title" prefHeight="34.0" prefWidth="458.0" styleClass="lbl_2_Title" stylesheets="@assets/styles/AdminDashBoard.css" text="  Manage Your Employees Salary " BorderPane.alignment="CENTER" />
+         </center>
+         <left>
+            <ImageView fitHeight="41.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@assets/pic/1.3-removebg-preview.jpg" />
+               </image>
+            </ImageView>
+         </left>
+         <bottom>
+            <Separator prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+      <AnchorPane id="text_AnchorPane" layoutX="31.0" layoutY="102.0" prefHeight="34.0" prefWidth="180.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <Label id="lbl_text" alignment="CENTER" layoutX="66.0" layoutY="-11.0" prefHeight="17.0" prefWidth="55.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Role ID" />
+            <JFXComboBox fx:id="cmb_RolID" layoutX="33.0" layoutY="1.0" prefHeight="25.0" prefWidth="120.0" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="26.0" AnchorPane.topAnchor="1.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="20.0" layoutY="176.0" prefHeight="34.0" prefWidth="180.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <Label id="lbl_text" alignment="CENTER" layoutX="113.0" layoutY="-13.0" prefHeight="17.0" prefWidth="55.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Name" />
+            <Label fx:id="lblEName" alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="5.0" prefHeight="25.0" prefWidth="130.0" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Ram" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="5.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="48.0" layoutY="268.0" prefHeight="34.0" prefWidth="180.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <Label id="lbl_text" alignment="CENTER" layoutX="96.0" layoutY="-12.0" prefHeight="17.0" prefWidth="74.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Basic Salary" />
+            <Label fx:id="lblBasicSalary" alignment="CENTER" contentDisplay="CENTER" layoutX="25.0" layoutY="5.0" prefHeight="25.0" prefWidth="130.0" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Label" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="220.0" layoutY="176.0" prefHeight="34.0" prefWidth="345.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <Label id="lbl_text" alignment="CENTER" layoutX="223.0" layoutY="-10.0" prefHeight="17.0" prefWidth="89.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Role Description" />
+            <Label fx:id="lblEDescription" alignment="CENTER" contentDisplay="CENTER" layoutX="18.0" layoutY="4.0" prefHeight="25.0" prefWidth="307.0" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Label" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="24.0" AnchorPane.topAnchor="5.0" />
+         </children>
+      </AnchorPane>
+      <Separator layoutX="180.0" layoutY="239.0" prefWidth="200.0" AnchorPane.leftAnchor="180.0" AnchorPane.rightAnchor="220.0" />
+      <AnchorPane id="text_AnchorPane" layoutX="48.0" layoutY="333.0" prefHeight="34.0" prefWidth="180.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtAdvance" alignment="CENTER" layoutX="14.0" layoutY="1.0" onKeyReleased="#Validation_Part" prefHeight="25.0" prefWidth="130.0" promptText="25000.00" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="96.0" layoutY="-12.0" prefHeight="17.0" prefWidth="74.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Advance" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="48.0" layoutY="401.0" prefHeight="34.0" prefWidth="180.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtIncrement" alignment="CENTER" layoutX="14.0" layoutY="1.0" onKeyReleased="#Validation_Part" prefHeight="25.0" prefWidth="130.0" promptText="25000.00" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="96.0" layoutY="-12.0" prefHeight="17.0" prefWidth="74.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Increment" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="48.0" layoutY="463.0" prefHeight="34.0" prefWidth="180.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtDeduction" alignment="CENTER" layoutX="14.0" layoutY="1.0" onKeyReleased="#Validation_Part" prefHeight="25.0" prefWidth="130.0" promptText="25000.00" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="96.0" layoutY="-12.0" prefHeight="17.0" prefWidth="74.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Deductions" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="322.0" layoutY="314.0" prefHeight="34.0" prefWidth="180.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <Label id="lbl_text" alignment="CENTER" layoutX="96.0" layoutY="-12.0" prefHeight="17.0" prefWidth="74.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Month Salary" />
+            <Label fx:id="lblFinalSalary" alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="5.0" prefHeight="25.0" prefWidth="130.0" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Label" />
+         </children>
+      </AnchorPane>
+      <JFXButton id="btn_Confirm" alignment="CENTER" buttonType="RAISED" layoutX="322.0" layoutY="394.0" onMouseClicked="#Add_to_salary_details_database" prefHeight="34.0" prefWidth="180.0" styleClass="btn_Confirm" stylesheets="@assets/styles/AdminDashBoard.css" text=" Confirm ">
+         <graphic>
+            <FontAwesomeIcon iconName="THUMBS_UP" />
+         </graphic></JFXButton>
+   </children>
+</AnchorPane>

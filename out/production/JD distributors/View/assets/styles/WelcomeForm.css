@@ -1,0 +1,88 @@
+.close_FontAwesomeIcon{
+    -fx-background-color: #808e9b;
+}
+.close_FontAwesomeIcon:hover{
+    -fx-cursor: Hand;
+    -fx-font-size: 15px;
+    -fx-background-color: red;
+}
+
+
+.Logo_AnchorPane{
+    -fx-background-radius: 14px;
+    -fx-background-color: #485460;
+}
+
+.lblwelcome{
+    -fx-font-style: "Times New Roman", Times, serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-fill: gold;
+}
+
+.lblJDDistributors{
+    -fx-font-style: "Times New Roman", Times, serif;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+    -fx-text-fill: gold;
+}
+
+.lblVersion{
+    -fx-text-fill: #808e9b;
+    -fx-font-weight: bold;
+}
+
+.lblWelcomeBack{
+    -fx-font-style: "Times New Roman", Times, serif;
+    -fx-font-size: 20px;
+    -fx-text-fill: gold;
+    -fx-font-weight: bold;
+}
+
+.lblLogin_Text{
+    -fx-font-style: "Times New Roman", Times, serif;
+    -fx-font-size: 12px;
+    -fx-text-fill: gold;
+    -fx-font-weight: bold;
+}
+
+.lblAdmin{
+    -fx-font-style: "Times New Roman", Times, serif;
+    -fx-font-size: 15px;
+    -fx-background-color: #485460;
+    -fx-background-radius: 15px;
+    -fx-text-fill: gold;
+}
+
+.lblAdmin:hover{
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+    -fx-border-color: WHITE;
+    -fx-border-radius: 15px;
+}
+
+.Login_AnchorPane{
+    -fx-background-color: #7f8c8d;
+    -fx-background-radius: 20px;
+}
+
+.textField_Login{
+    -fx-background-radius: 16px;
+    -fx-background-color: #7f8c8d;
+}
+
+.btnButton{
+    -fx-text-fill: #000000;
+    -fx-font-family: sans-serif;
+    -fx-background-radius: 20px;
+    -fx-text-alignment: center;
+    -fx-background-color: #2180e2;
+}
+
+.btnButton:hover{
+    -fx-border-color: WHITE;
+    -fx-border-radius: 20PX;
+    -fx-cursor: hand;
+    -fx-background-color:#00a8ff;
+    -fx-font-weight: bold;
+}

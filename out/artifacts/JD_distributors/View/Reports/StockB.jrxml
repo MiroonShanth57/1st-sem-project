@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="StockB" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2b54e326-30ec-4850-b490-5ff4c0eb3e4a">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="JD Connection "/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w1" value="467"/>
+	<property name="com.jaspersoft.studio.data.sql.SQLQueryDesigner.sash.w2" value="522"/>
+	<queryString>
+		<![CDATA[select * from perfume]]>
+	</queryString>
+	<field name="PerfumeCode" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="PerfumeCode"/>
+		<property name="com.jaspersoft.studio.field.label" value="PerfumeCode"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="perfume"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NameOfPerfume" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="NameOfPerfume"/>
+		<property name="com.jaspersoft.studio.field.label" value="NameOfPerfume"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="perfume"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Quantity" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="Quantity"/>
+		<property name="com.jaspersoft.studio.field.label" value="Quantity"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="perfume"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="DistributePrice" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="DistributePrice"/>
+		<property name="com.jaspersoft.studio.field.label" value="DistributePrice"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="perfume"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="UnitPrice" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="UnitPrice"/>
+		<property name="com.jaspersoft.studio.field.label" value="UnitPrice"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="perfume"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="MRPPrice" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="MRPPrice"/>
+		<property name="com.jaspersoft.studio.field.label" value="MRPPrice"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="perfume"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="SupplierID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="SupplierID"/>
+		<property name="com.jaspersoft.studio.field.label" value="SupplierID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="perfume"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="12" width="555" height="40" uuid="6f0a3b37-4921-4b23-a90e-b235329b8d18"/>
+				<textElement textAlignment="Center">
+					<font size="25"/>
+				</textElement>
+				<text><![CDATA[JD Distributors ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="41" width="555" height="30" uuid="5bd1c8ca-aa6e-4be6-858a-3cd378a66e88"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[Stock Balance]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="66" width="555" height="1" uuid="baabea04-5342-4d3a-b650-8eb801115745"/>
+			</line>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="25" y="44" width="155" height="30" uuid="10b087a1-fed6-44d4-a3b0-d30190ff48e9"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="38" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="141" height="30" uuid="33200bfe-48af-4d08-86b8-d92c4f190a54">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b3a649bd-0500-4935-8e4c-487da8f53d26"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[Code]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="141" y="0" width="138" height="30" uuid="fbb2c80d-393a-4974-ae16-f33ab074bdd4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="14c188f5-bf4a-4b34-a02d-6ceabf85eb6f"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="0" width="138" height="30" uuid="e5781eb6-ab19-46ad-8065-51532472224a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="54939426-a3b4-4979-970d-30a0c5412d5e"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[Quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="417" y="0" width="138" height="30" uuid="abf5956f-3d92-4572-b252-967268b3a0d1">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3b76751f-2ede-4267-951c-6f7dfc39d942"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<text><![CDATA[MRPPrice]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="37" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="141" height="30" uuid="028c18de-264a-4259-a0cc-b560beba2c7f">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b3a649bd-0500-4935-8e4c-487da8f53d26"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PerfumeCode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="141" y="0" width="138" height="30" uuid="f4f1a01d-b5c0-4e8e-9b07-f0ca9f485cf0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="14c188f5-bf4a-4b34-a02d-6ceabf85eb6f"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{NameOfPerfume}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="0" width="138" height="30" uuid="d8f5a51a-ea94-4ca0-85d4-305fa97c52d8">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="54939426-a3b4-4979-970d-30a0c5412d5e"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{Quantity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="417" y="0" width="138" height="30" uuid="5294a700-4731-4d47-8b5f-1d39c977dff3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="3b76751f-2ede-4267-951c-6f7dfc39d942"/>
+				</reportElement>
+				<textElement textAlignment="Center">
+					<font fontName="SansSerif" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{MRPPrice}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="55" splitType="Stretch">
+			<staticText>
+				<reportElement x="20" y="25" width="100" height="30" uuid="acfc2c78-72c7-4ad9-9b16-ff59e8aaac24"/>
+				<textElement>
+					<font fontName="SansSerif"/>
+				</textElement>
+				<text><![CDATA[Manager Signature]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="55" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

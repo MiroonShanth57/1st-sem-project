@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="550.0" prefWidth="600.0" style="-fx-background-color: #b4e5f0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.EmployeeFormController">
+   <children>
+      <BorderPane layoutY="1.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+         <center>
+            <Label id="lbl_1_Title" prefHeight="34.0" prefWidth="480.0" styleClass="lbl_1_Title" stylesheets="@assets/styles/AdminDashBoard.css" text="  Manage Your Employees Here" BorderPane.alignment="CENTER" />
+         </center>
+         <left>
+            <ImageView fitHeight="38.0" fitWidth="52.0" pickOnBounds="true" BorderPane.alignment="CENTER_RIGHT">
+               <image>
+                  <Image url="@assets/pic/1.1.jpg" />
+               </image>
+            </ImageView>
+         </left>
+      </BorderPane>
+      <Separator layoutX="218.0" layoutY="54.0" prefWidth="200.0" AnchorPane.leftAnchor="218.0" AnchorPane.rightAnchor="182.0" />
+      <AnchorPane id="text_AnchorPane" layoutX="341.0" layoutY="80.0" prefHeight="43.0" prefWidth="237.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css" AnchorPane.leftAnchor="341.0" AnchorPane.rightAnchor="22.0">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtRoleIDForSearch" alignment="BOTTOM_LEFT" layoutX="17.0" layoutY="1.0" prefHeight="30.0" prefWidth="117.0" promptText="RI-01" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="104.0" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="66.0" layoutY="-11.0" prefHeight="17.0" prefWidth="55.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Role ID" />
+            <JFXButton id="btn_Text" buttonType="RAISED" layoutX="139.0" layoutY="6.0" onMouseClicked="#search_Employees_in_database" prefHeight="20.0" prefWidth="89.0" styleClass="btn_Text" stylesheets="@assets/styles/AdminDashBoard.css" text="Search" AnchorPane.topAnchor="6.0">
+               <graphic>
+                  <ImageView accessibleRole="BUTTON" fitHeight="16.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@assets/pic/1.2-removebg-preview.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="21.0" layoutY="192.0" prefHeight="34.0" prefWidth="180.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtEName" alignment="CENTER" layoutX="14.0" layoutY="1.0" onKeyReleased="#Validation_Part" prefHeight="25.0" prefWidth="130.0" promptText="Ram" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="113.0" layoutY="-12.0" prefHeight="17.0" prefWidth="55.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Name" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="405.0" layoutY="191.0" prefHeight="34.0" prefWidth="180.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtEAddress" alignment="CENTER" layoutX="14.0" layoutY="1.0" onKeyReleased="#Validation_Part" prefHeight="25.0" prefWidth="157.0" promptText="19/19,Main Street,Hatton" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="120.0" layoutY="-13.0" prefHeight="17.0" prefWidth="55.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Address" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="214.0" layoutY="303.0" prefHeight="34.0" prefWidth="180.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtECNumber" alignment="CENTER" layoutX="14.0" layoutY="1.0" onKeyReleased="#Validation_Part" prefHeight="25.0" prefWidth="130.0" promptText="071-876-5780" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="90.0" layoutY="-13.0" prefHeight="17.0" prefWidth="80.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Contuct Number" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="214.0" layoutY="192.0" prefHeight="34.0" prefWidth="180.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtENIC" alignment="CENTER" layoutX="14.0" layoutY="1.0" onKeyReleased="#Validation_Part" prefHeight="25.0" prefWidth="130.0" promptText="200032456712" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="115.0" layoutY="-12.0" prefHeight="17.0" prefWidth="55.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="N.I.C" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="21.0" layoutY="303.0" prefHeight="34.0" prefWidth="180.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtESalary" alignment="CENTER" layoutX="14.0" layoutY="1.0" onKeyReleased="#Validation_Part" prefHeight="25.0" prefWidth="130.0" promptText="25000.00" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="115.0" layoutY="-12.0" prefHeight="17.0" prefWidth="55.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Salary" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="21.0" layoutY="247.0" prefHeight="34.0" prefWidth="180.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtERoleID" alignment="CENTER" layoutX="14.0" layoutY="1.0" onKeyReleased="#Validation_Part" prefHeight="25.0" prefWidth="122.0" promptText="RI-01" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="111.0" layoutY="-10.0" prefHeight="17.0" prefWidth="55.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Role ID" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="217.0" layoutY="247.0" prefHeight="34.0" prefWidth="345.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtEDescription" alignment="CENTER" layoutX="14.0" layoutY="1.0" onKeyReleased="#Validation_Part" prefHeight="25.0" prefWidth="307.0" promptText="Driver" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="223.0" layoutY="-10.0" prefHeight="17.0" prefWidth="89.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Role Description" />
+         </children>
+      </AnchorPane>
+      <BorderPane layoutY="122.0" prefHeight="60.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <center>
+            <Label prefHeight="25.0" prefWidth="224.0" styleClass="lbl_1_2ndTit" stylesheets="@assets/styles/AdminDashBoard.css" text="  Add New Employee" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+      <JFXButton id="btn_Save" buttonType="RAISED" layoutX="418.0" layoutY="306.0" onMouseClicked="#Add_Employee_to_Database" prefHeight="25.0" prefWidth="109.0" styleClass="btn_Save" stylesheets="@assets/styles/AdminDashBoard.css" text="Appoint">
+         <graphic>
+            <FontAwesomeIcon iconName="USER_PLUS" size="1.2em" />
+         </graphic></JFXButton>
+      <JFXButton id="btn_Reject" buttonType="RAISED" layoutX="237.0" layoutY="491.0" onMouseClicked="#Delete_Employee_details_database" prefHeight="25.0" prefWidth="109.0" styleClass="btn_Reject" stylesheets="@assets/styles/AdminDashBoard.css" text="Dismiss ">
+         <graphic>
+            <FontAwesomeIcon iconName="USER_TIMES" size="1.2em" />
+         </graphic></JFXButton>
+      <JFXButton id="btn_modified" buttonType="RAISED" layoutX="418.0" layoutY="439.0" onMouseClicked="#update_Employee_details_database" prefHeight="25.0" prefWidth="109.0" styleClass="btn_modified" stylesheets="@assets/styles/AdminDashBoard.css" text="Modified">
+         <graphic>
+            <FontAwesomeIcon iconName="EDIT" size="1.2em" />
+         </graphic></JFXButton>
+      <JFXButton id="btn_All" buttonType="RAISED" layoutX="398.0" layoutY="491.0" onMouseClicked="#open_all_employee_details_Form" prefHeight="25.0" prefWidth="148.0" styleClass="btn_All" stylesheets="@assets/styles/AdminDashBoard.css" text="All Employee">
+         <graphic>
+            <FontAwesomeIcon iconName="USERS" size="1.2em" />
+         </graphic></JFXButton>
+      <AnchorPane id="text_AnchorPane" layoutX="166.0" layoutY="362.0" prefHeight="34.0" prefWidth="180.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtUserName" alignment="CENTER" layoutX="14.0" layoutY="1.0" onKeyReleased="#Validation_Part" prefHeight="25.0" prefWidth="130.0" promptText="xxxxxxxxxxx" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="90.0" layoutY="-13.0" prefHeight="17.0" prefWidth="80.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Username" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="370.0" layoutY="362.0" prefHeight="34.0" prefWidth="180.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtPassword" alignment="CENTER" layoutX="14.0" layoutY="1.0" onKeyReleased="#Validation_Part" prefHeight="25.0" prefWidth="130.0" promptText="xxxxxx" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="90.0" layoutY="-13.0" prefHeight="17.0" prefWidth="80.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Password" />
+         </children>
+      </AnchorPane>
+      <JFXToggleButton fx:id="toggle" contentDisplay="RIGHT" layoutX="28.0" layoutY="360.0" onMouseClicked="#make_UsernameAndPassword" prefHeight="17.0" prefWidth="122.0" size="6.0" text="System User" toggleColor="#0048ff" toggleLineColor="#0099ff" unToggleColor="#13cf2e">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+      </JFXToggleButton>
+      <JFXButton id="btn_Save" fx:id="btnSystemUser" buttonType="RAISED" layoutX="202.0" layoutY="439.0" onMouseClicked="#give_a_space_to_make_user" prefHeight="28.0" prefWidth="180.0" styleClass="btn_Save" stylesheets="@assets/styles/AdminDashBoard.css" text="SystemUser">
+         <graphic>
+            <FontAwesomeIcon iconName="USER_PLUS" size="1.2em" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

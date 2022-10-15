@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="600.0" style="-fx-background-color: #b4e5f0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SupplierFormController">
+   <children>
+      <BorderPane layoutY="4.0" prefHeight="48.0" prefWidth="600.0" AnchorPane.topAnchor="4.0">
+         <center>
+            <Label id="lbl_2_Title" alignment="CENTER" prefHeight="34.0" prefWidth="220.0" styleClass="lbl_2_Title" stylesheets="@assets/styles/AdminDashBoard.css" text="Supplier" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <Separator prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+      <AnchorPane id="text_AnchorPane" layoutX="22.0" layoutY="141.0" onKeyReleased="#Validation_Part" prefHeight="34.0" prefWidth="148.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtSID" alignment="CENTER" layoutX="19.0" layoutY="3.0" prefHeight="25.0" prefWidth="98.0" promptText="SI-01" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="32.0" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="88.0" layoutY="-8.0" prefHeight="17.0" prefWidth="55.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="ID" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="211.0" layoutY="140.0" onKeyReleased="#Validation_Part" prefHeight="34.0" prefWidth="251.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtSName" alignment="CENTER" layoutX="20.0" layoutY="3.0" prefHeight="25.0" prefWidth="199.0" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="33.0" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="179.0" layoutY="-10.0" prefHeight="17.0" prefWidth="55.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Name" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="19.0" layoutY="200.0" onKeyReleased="#Validation_Part" prefHeight="34.0" prefWidth="335.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtSAddress" alignment="CENTER" layoutX="17.0" layoutY="3.0" prefHeight="25.0" prefWidth="277.0" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="42.0" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="265.0" layoutY="-10.0" prefHeight="17.0" prefWidth="55.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Address" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="23.0" layoutY="259.0" onKeyReleased="#Validation_Part" prefHeight="34.0" prefWidth="210.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtSEmail" alignment="CENTER" layoutX="17.0" layoutY="3.0" prefHeight="25.0" prefWidth="116.0" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="81.0" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="143.0" layoutY="-8.0" prefHeight="17.0" prefWidth="55.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Email" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="368.0" layoutY="200.0" onKeyReleased="#Validation_Part" prefHeight="34.0" prefWidth="210.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtCNumber" alignment="CENTER" layoutX="19.0" layoutY="3.0" prefHeight="25.0" prefWidth="155.0" promptText="xxxxxxxxxx" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="37.0" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="112.0" layoutY="-8.0" prefHeight="17.0" prefWidth="86.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Contuct Number" />
+         </children>
+      </AnchorPane>
+      <Label id="lbl_Inventory" alignment="CENTER" layoutX="23.0" layoutY="80.0" prefHeight="24.0" prefWidth="174.0" styleClass="lbl_Inventory" stylesheets="@assets/styles/AdminDashBoard.css" text="Add Supplier " />
+      <JFXButton id="btn_confirm" buttonType="RAISED" contentDisplay="RIGHT" layoutX="294.0" layoutY="260.0" onMouseClicked="#Add_Supplier_To_database" prefHeight="31.0" prefWidth="133.0" styleClass="btn_confirm" stylesheets="@assets/styles/AdministratorDashboardForm.css" text="Confirm ">
+         <graphic>
+            <FontAwesomeIcon iconName="THUMBS_UP" size="1.4em" />
+         </graphic>
+      </JFXButton>
+      <TableView id="table_view" fx:id="tblSupplier" blendMode="MULTIPLY" layoutX="7.0" layoutY="360.0" prefHeight="163.0" prefWidth="586.0" styleClass="table_All" stylesheets="@assets/styles/AdminDashBoard.css">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="53.666656494140625" style="-fx-alignment: CENTER;" text="ID" />
+          <TableColumn fx:id="colName" prefWidth="139.66665649414062" style="-fx-alignment: CENTER;" text="NAME" />
+            <TableColumn fx:id="colAddress" prefWidth="108.33334350585938" style="-fx-alignment: CENTER;" text="ADDRESS" />
+            <TableColumn fx:id="colCNumber" prefWidth="87.3333740234375" style="-fx-alignment: CENTER;" text="C.NUMBER" />
+            <TableColumn fx:id="colEmailID" prefWidth="121.33331298828125" style="-fx-alignment: CENTER;" text="EMAIL ID" />
+            <TableColumn fx:id="colDelete" editable="false" prefWidth="75.66668701171875" sortable="false" style="-fx-alignment: CENTER;" text="DELETE" />
+        </columns>
+      </TableView>
+      <JFXButton id="btn_Refresh" buttonType="RAISED" layoutX="23.0" layoutY="322.0" onMouseClicked="#load_Supplier_details" styleClass="btn_Refresh" stylesheets="@assets/styles/AdminDashBoard.css" text="Refresh">
+         <graphic>
+            <FontAwesomeIcon iconName="REFRESH" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

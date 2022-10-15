@@ -1,0 +1,68 @@
+.lbl_forgot_password{
+    -fx-text-fill: #dcdde1;
+    -fx-border-color: #dcdde1;
+    -fx-border-radius: 20px;
+    -fx-font-size: 10px;
+    -fx-text-alignment: center;
+}
+
+.lbl_forgot_password:hover{
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+
+.btn-SignIn{
+    -fx-background-radius: 20px;
+    -fx-text-alignment: center;
+    -fx-background-color:#7f8c8d;
+
+}
+
+.btn-SignIn:hover{
+    -fx-cursor: hand;
+    -fx-background-color:#00a8ff;
+    -fx-font-weight: bold;
+}
+
+.lbl_DontHaveAccount{
+    -fx-text-fill: #dcdde1;
+    -fx-border-color: #dcdde1;
+    -fx-border-radius: 20px;
+    -fx-font-size: 11px;
+    -fx-text-alignment: center;
+}
+
+.lbl_DontHaveAccount:hover{
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+
+.lbl_CreateAccount{
+    -fx-text-fill: gold;
+    -fx-font-size: 17px;
+    -fx-font-style: "Times New Roman", Times, serif;
+}
+
+
+
+/*///////////////////////////*/
+.SignUp_AnchorPane{
+    -fx-background-color: #7f8c8d;
+    -fx-background-radius: 20px;
+}
+
+.btn_SignUp{
+    -fx-text-fill: #000000;
+    -fx-font-family: sans-serif;
+    -fx-background-radius: 20px;
+    -fx-text-alignment: center;
+    -fx-background-color: #2180e2;
+}
+
+.btn_SignUp:hover{
+    -fx-cursor: hand;
+    -fx-background-color:#00a8ff;
+    -fx-font-weight: bold;
+    -fx-border-color: gold;
+    -fx-border-radius: 20px;
+}

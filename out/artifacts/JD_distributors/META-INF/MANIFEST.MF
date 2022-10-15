@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: AppInitializer
+Class-Path: D:\SemesterFinalProject\JD distributors\src
+

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="850.0" style="-fx-background-color: #b4e5f0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.InvoiceFormController">
+   <children>
+      <BorderPane layoutY="6.0" prefHeight="43.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="6.0">
+         <center>
+            <Label id="lbl_2_Title" alignment="CENTER" prefHeight="34.0" prefWidth="220.0" styleClass="lbl_2_Title" stylesheets="@assets/styles/AdminDashBoard.css" text="INVOICE" BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <Separator prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+      <AnchorPane id="Invoice_AnchorPane" layoutX="22.0" layoutY="68.0" onKeyReleased="#Validation_Part" prefHeight="43.0" prefWidth="135.0" styleClass="Invoice_AnchorPane" stylesheets="@assets/styles/ManagerDashboard.css" AnchorPane.leftAnchor="22.0" AnchorPane.topAnchor="68.0">
+         <children>
+            <Label id="lbl._invoice" alignment="CENTER" contentDisplay="CENTER" layoutX="5.0" layoutY="-10.0" prefHeight="19.0" prefWidth="125.0" styleClass="lbl_invoice" stylesheets="@assets/styles/ManagerDashboard.css" text="Invoice Number" />
+            <Label fx:id="lblInvoiceNumber" alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="12.0" prefHeight="29.0" prefWidth="61.0" styleClass="txt_invoice" stylesheets="@assets/styles/ManagerDashboard.css" AnchorPane.leftAnchor="34.0" AnchorPane.rightAnchor="40.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="Invoice_AnchorPane" layoutX="190.0" layoutY="68.0" onKeyReleased="#Validation_Part" prefHeight="43.0" prefWidth="251.0" styleClass="Invoice_AnchorPane" stylesheets="@assets/styles/ManagerDashboard.css" AnchorPane.topAnchor="68.0">
+         <children>
+            <Label id="lbl._invoice" alignment="CENTER" contentDisplay="CENTER" layoutX="67.0" layoutY="-11.0" prefHeight="19.0" prefWidth="125.0" styleClass="lbl_invoice" stylesheets="@assets/styles/ManagerDashboard.css" text="Customer Name" />
+            <JFXTextField fx:id="txtCustomerName" alignment="CENTER" layoutX="12.0" layoutY="11.0" prefHeight="29.0" prefWidth="222.0" styleClass="txt_invoice" stylesheets="@assets/styles/ManagerDashboard.css" />
+         </children>
+      </AnchorPane>
+      <Separator layoutX="178.0" layoutY="72.0" orientation="VERTICAL" prefHeight="35.0" prefWidth="2.0" />
+      <AnchorPane id="Invoice_AnchorPane" layoutX="457.0" layoutY="68.0" onKeyReleased="#Validation_Part" prefHeight="43.0" prefWidth="240.0" styleClass="Invoice_AnchorPane" stylesheets="@assets/styles/ManagerDashboard.css">
+         <children>
+            <Label id="lbl._invoice" alignment="CENTER" contentDisplay="CENTER" layoutX="52.0" layoutY="-10.0" prefHeight="19.0" prefWidth="135.0" styleClass="lbl_invoice" stylesheets="@assets/styles/ManagerDashboard.css" text="Customer Address" />
+            <JFXTextField fx:id="txtCustomerAddress" alignment="CENTER" layoutX="12.0" layoutY="12.0" prefHeight="29.0" prefWidth="215.0" styleClass="txt_invoice" stylesheets="@assets/styles/ManagerDashboard.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="Invoice_AnchorPane" layoutX="711.0" layoutY="68.0" prefHeight="43.0" prefWidth="125.0" styleClass="Invoice_AnchorPane" stylesheets="@assets/styles/ManagerDashboard.css">
+         <children>
+            <Label id="lbl._invoice" alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="-14.0" prefHeight="19.0" prefWidth="74.0" styleClass="lbl_invoice" stylesheets="@assets/styles/ManagerDashboard.css" text="Date" />
+            <JFXDatePicker fx:id="dateInvoicedDate" defaultColor="#152465" layoutX="14.0" layoutY="9.0" prefHeight="29.0" prefWidth="97.0" showWeekNumbers="true" styleClass="txt_invoice" stylesheets="@assets/styles/ManagerDashboard.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="Invoice_AnchorPane" layoutX="15.0" layoutY="185.0" prefHeight="43.0" prefWidth="135.0" styleClass="Invoice_AnchorPane" stylesheets="@assets/styles/ManagerDashboard.css">
+         <children>
+            <Label id="lbl._invoice" alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="-14.0" prefHeight="19.0" prefWidth="106.0" styleClass="lbl_invoice" stylesheets="@assets/styles/ManagerDashboard.css" text="Perfume Code" />
+            <JFXComboBox fx:id="cmbPerfumeCode" layoutX="14.0" layoutY="8.0" prefHeight="29.0" prefWidth="106.0" style="-fx-alignment: CENTER;" styleClass="txt_invoice" stylesheets="@assets/styles/ManagerDashboard.css" />
+         </children>
+      </AnchorPane>
+      <Separator layoutX="326.0" layoutY="142.0" prefWidth="200.0" />
+      <AnchorPane id="Invoice_AnchorPane" layoutX="166.0" layoutY="185.0" prefHeight="43.0" prefWidth="160.0" styleClass="Invoice_AnchorPane" stylesheets="@assets/styles/ManagerDashboard.css">
+         <children>
+            <Label id="lbl._invoice" alignment="CENTER" contentDisplay="CENTER" layoutX="40.0" layoutY="-14.0" prefHeight="19.0" prefWidth="106.0" styleClass="lbl_invoice" stylesheets="@assets/styles/ManagerDashboard.css" text="Perfume Name" />
+            <Label fx:id="lblPName" alignment="CENTER" contentDisplay="CENTER" layoutX="12.0" layoutY="10.0" prefHeight="29.0" prefWidth="135.0" styleClass="txt_invoice" stylesheets="@assets/styles/ManagerDashboard.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="Invoice_AnchorPane" layoutX="346.0" layoutY="185.0" prefHeight="43.0" prefWidth="118.0" styleClass="Invoice_AnchorPane" stylesheets="@assets/styles/ManagerDashboard.css">
+         <children>
+            <Label id="lbl._invoice" alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="-15.0" prefHeight="19.0" prefWidth="74.0" styleClass="lbl_invoice" stylesheets="@assets/styles/ManagerDashboard.css" text="Price" />
+            <Label fx:id="lblPrice" alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="10.0" prefHeight="29.0" prefWidth="88.0" styleClass="txt_invoice" stylesheets="@assets/styles/ManagerDashboard.css" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="Invoice_AnchorPane" layoutX="673.0" layoutY="185.0" onKeyReleased="#Validation_Part" prefHeight="43.0" prefWidth="151.0" styleClass="Invoice_AnchorPane" stylesheets="@assets/styles/ManagerDashboard.css">
+         <children>
+            <Label id="lbl._invoice" alignment="CENTER" contentDisplay="CENTER" layoutX="19.0" layoutY="-14.0" prefHeight="19.0" prefWidth="118.0" styleClass="lbl_invoice" stylesheets="@assets/styles/ManagerDashboard.css" text="Quantity For Sale" />
+            <JFXTextField fx:id="txtForSale" alignment="CENTER" layoutX="14.0" layoutY="11.0" prefHeight="29.0" prefWidth="125.0" styleClass="txt_invoice" stylesheets="@assets/styles/ManagerDashboard.css" />
+         </children>
+      </AnchorPane>
+      <JFXButton id="btn_validate" fx:id="btnValidate" buttonType="RAISED" layoutX="697.0" layoutY="250.0" onMouseClicked="#Add_to_Database_Invoice_Details" prefHeight="35.0" prefWidth="125.0" styleClass="btn_validate" stylesheets="@assets/styles/ManagerDashboard.css" text="Validate">
+         <graphic>
+            <FontAwesomeIcon iconName="CHECK" size="1.4em" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TableView id="table_Invoice" fx:id="tblCart" blendMode="MULTIPLY" layoutX="20.0" layoutY="270.0" prefHeight="204.0" prefWidth="592.0" styleClass="table_Invoice" stylesheets="@assets/styles/ManagerDashboard.css" AnchorPane.bottomAnchor="76.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="238.0" AnchorPane.topAnchor="270.0">
+        <columns>
+            <TableColumn fx:id="colDateValidate" resizable="false" style="-fx-alignment: CENTER;" text="Date" />
+          <TableColumn fx:id="colInvoiceNo" prefWidth="79.00003051757812" style="-fx-alignment: CENTER;" text="Invoice No" />
+          <TableColumn fx:id="colPCode" prefWidth="113.0" style="-fx-alignment: CENTER;" text="Perfume.Code" />
+            <TableColumn fx:id="colPName" prefWidth="147.0" style="-fx-alignment: CENTER;" text="Perfume Name" />
+            <TableColumn fx:id="colQTY" prefWidth="91.3333740234375" style="-fx-alignment: CENTER;" text="QTY for Sale" />
+            <TableColumn fx:id="colAmount" prefWidth="77.6666259765625" style="-fx-alignment: CENTER;" text="Amount" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+      <JFXButton id="btn_PRINT" alignment="CENTER" buttonType="RAISED" contentDisplay="RIGHT" layoutX="647.0" layoutY="457.0" onAction="#printInvoice" prefHeight="35.0" prefWidth="171.0" styleClass="btn_PRINT" stylesheets="@assets/styles/ManagerDashboard.css" text="Print Invoice   " AnchorPane.bottomAnchor="58.0">
+         <graphic>
+            <FontAwesomeIcon fill="#fdfcff" iconName="PRINT" size="1.3em" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <AnchorPane id="anchorPane_total" layoutX="657.0" layoutY="329.0" prefHeight="35.0" prefWidth="160.0" styleClass="anchorPane_total" stylesheets="@assets/styles/ManagerDashboard.css">
+         <children>
+            <Label id="lbl._invoice" alignment="CENTER" contentDisplay="CENTER" layoutX="22.0" layoutY="-14.0" prefHeight="16.0" prefWidth="118.0" styleClass="lbl_invoice" stylesheets="@assets/styles/ManagerDashboard.css" text="Total Bill Amount" />
+            <Label id="lbl_Total" fx:id="lblCost" alignment="CENTER" contentDisplay="CENTER" layoutX="15.0" layoutY="4.0" prefHeight="29.0" prefWidth="135.0" styleClass="lbl_Total" stylesheets="@assets/styles/ManagerDashboard.css" text="66778" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="Invoice_AnchorPane" layoutX="483.0" layoutY="185.0" prefHeight="43.0" prefWidth="160.0" styleClass="Invoice_AnchorPane" stylesheets="@assets/styles/ManagerDashboard.css">
+         <children>
+            <Label id="lbl._invoice" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="-14.0" prefHeight="19.0" prefWidth="135.0" styleClass="lbl_invoice" stylesheets="@assets/styles/ManagerDashboard.css" text="Stock on Hand" />
+            <Label fx:id="lblQty" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="11.0" prefHeight="29.0" prefWidth="135.0" styleClass="txt_invoice" stylesheets="@assets/styles/ManagerDashboard.css" />
+         </children>
+      </AnchorPane>
+      <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="RIGHT" layoutX="716.0" layoutY="123.0" onMouseClicked="#Save_Customer_In_Database" prefHeight="28.0" prefWidth="106.0" ripplerFill="WHITE" styleClass="btn_Next" stylesheets="@assets/styles/ManagerDashboard.css" text="NEXT">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon fill="WHITE" iconName="ANGLE_DOWN" />
+         </graphic>
+      </JFXButton>
+      <Separator layoutX="645.0" layoutY="304.0" prefHeight="3.0" prefWidth="171.0" />
+      <JFXButton id="btn_Confirm" fx:id="btnConfirm" alignment="CENTER" buttonType="RAISED" contentDisplay="RIGHT" layoutX="647.0" layoutY="386.0" onMouseClicked="#Save_the_final_order" prefHeight="35.0" prefWidth="171.0" styleClass="btn_Confirm" stylesheets="@assets/styles/ManagerDashboard.css" text="Confirm The Order">
+         <graphic>
+            <FontAwesomeIcon iconName="PLUS" size="1.1em" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btn_remove" alignment="CENTER" buttonType="RAISED" contentDisplay="RIGHT" layoutX="99.0" layoutY="489.0" onMouseClicked="#Remove_From_Perfume_Table" prefHeight="35.0" prefWidth="424.0" styleClass="btn_Remove" stylesheets="@assets/styles/ManagerDashboard.css" text="Remove The Perfume From Invoice">
+         <graphic>
+            <FontAwesomeIcon iconName="TRASH" size="1.1em" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

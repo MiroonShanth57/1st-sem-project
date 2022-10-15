@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="600.0" style="-fx-background-color: #b4e5f0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.VehicleFormController">
+   <children>
+      <BorderPane prefHeight="51.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <Label id="lbl_1_Title" alignment="CENTER" prefHeight="34.0" prefWidth="354.0" styleClass="lbl_1_Title" stylesheets="@assets/styles/AdminDashBoard.css" text="Company Vehicle " BorderPane.alignment="CENTER" />
+         </center>
+         <bottom>
+            <Separator prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+      <AnchorPane id="text_AnchorPane" layoutX="48.0" layoutY="155.0" onKeyReleased="#Validation_Part" prefHeight="34.0" prefWidth="210.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css" AnchorPane.leftAnchor="48.0" AnchorPane.rightAnchor="342.0">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtVNumber" alignment="CENTER" layoutX="16.0" layoutY="1.0" prefHeight="25.0" prefWidth="116.0" promptText="WP-MK 0989" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="79.0" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="143.0" layoutY="-8.0" prefHeight="17.0" prefWidth="55.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Number" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="300.0" layoutY="155.0" onKeyReleased="#Validation_Part" prefHeight="34.0" prefWidth="210.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="90.0">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtVType" alignment="CENTER" layoutX="16.0" layoutY="1.0" prefHeight="25.0" prefWidth="118.0" promptText="Car / Van / Lorry" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="77.0" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="141.0" layoutY="-9.0" prefHeight="17.0" prefWidth="55.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Type" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="48.0" layoutY="218.0" onKeyReleased="#Validation_Part" prefHeight="34.0" prefWidth="210.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css" AnchorPane.leftAnchor="48.0" AnchorPane.rightAnchor="342.0">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtFType" alignment="CENTER" layoutX="16.0" layoutY="1.0" prefHeight="25.0" prefWidth="120.0" promptText="Petrol" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="75.0" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="140.0" layoutY="-8.0" prefHeight="17.0" prefWidth="55.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Fuel Type" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="300.0" layoutY="218.0" onKeyReleased="#Validation_Part" prefHeight="34.0" prefWidth="210.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="90.0">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtVColor" alignment="CENTER" layoutX="16.0" layoutY="1.0" prefHeight="25.0" prefWidth="122.0" promptText="Red" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="73.0" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="142.0" layoutY="-9.0" prefHeight="17.0" prefWidth="55.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="color" />
+         </children>
+      </AnchorPane>
+      <AnchorPane id="text_AnchorPane" layoutX="313.0" layoutY="83.0" prefHeight="34.0" prefWidth="237.0" styleClass="text_AnchorPane" stylesheets="@assets/styles/AdminDashBoard.css" AnchorPane.leftAnchor="313.0" AnchorPane.rightAnchor="50.0">
+         <children>
+            <JFXTextField id="textField_text" fx:id="txtSearchNumber" alignment="TOP_LEFT" layoutX="14.0" layoutY="1.0" prefHeight="25.0" prefWidth="122.0" promptText="KM-3432" styleClass="textField_text" stylesheets="@assets/styles/AdminDashBoard.css" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="101.0" AnchorPane.topAnchor="1.0" />
+            <Label id="lbl_text" alignment="CENTER" layoutX="83.0" layoutY="-11.0" prefHeight="17.0" prefWidth="55.0" styleClass="lbl_text" stylesheets="@assets/styles/AdminDashBoard.css" text="Number" AnchorPane.leftAnchor="82.0" AnchorPane.rightAnchor="99.0" />
+            <JFXButton id="btn_Text" buttonType="RAISED" layoutX="141.0" layoutY="3.0" onMouseClicked="#search_Vehicle_in_database" prefHeight="25.0" prefWidth="89.0" styleClass="btn_Text" stylesheets="@assets/styles/AdminDashBoard.css" text="Search" AnchorPane.rightAnchor="7.0">
+               <graphic>
+                  <FontAwesomeIcon fill="#0004f6" iconName="SEARCH" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="193.0" layoutY="132.0" prefWidth="200.0" />
+      <JFXButton id="btn_Save" buttonType="RAISED" layoutX="103.0" layoutY="285.0" onMouseClicked="#add_to_vehicle_database" prefHeight="23.0" prefWidth="109.0" styleClass="btn_Save" stylesheets="@assets/styles/AdminDashBoard.css" text="Add++" AnchorPane.topAnchor="285.0" />
+      <JFXButton id="btn_Reject" buttonType="RAISED" layoutX="381.0" layoutY="285.0" onMouseClicked="#delete_Vehicle_details_database" prefHeight="23.0" prefWidth="109.0" styleClass="btn_Reject" stylesheets="@assets/styles/AdminDashBoard.css" text="Remove" AnchorPane.topAnchor="285.0" />
+      <JFXButton id="btn_modified" buttonType="RAISED" layoutX="244.0" layoutY="285.0" onMouseClicked="#update_Vehicle_details_database" prefHeight="23.0" prefWidth="109.0" styleClass="btn_modified" stylesheets="@assets/styles/AdminDashBoard.css" text="Modified" AnchorPane.topAnchor="285.0" />
+      <TableView fx:id="tblAllVehicle" blendMode="MULTIPLY" layoutX="28.0" layoutY="379.0" prefHeight="157.0" prefWidth="544.0" styleClass="table_All" stylesheets="@assets/styles/AdminDashBoard.css" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="28.0" AnchorPane.rightAnchor="28.0">
+        <columns>
+          <TableColumn fx:id="colNumber" prefWidth="143.66665649414062" style="-fx-alignment: CENTER;" text="Number" />
+          <TableColumn fx:id="colType" prefWidth="126.0" style="-fx-alignment: CENTER;" text="Type" />
+            <TableColumn fx:id="colFuel" prefWidth="140.6666259765625" style="-fx-alignment: CENTER;" text="Fuel" />
+            <TableColumn fx:id="colColor" prefWidth="136.3333740234375" style="-fx-alignment: CENTER;" text="Color" />
+        </columns>
+      </TableView>
+      <JFXButton id="btn_Refresh" buttonType="RAISED" layoutX="34.0" layoutY="338.0" onMouseClicked="#load_Vehicle_details" styleClass="btn_Refresh" stylesheets="@assets/styles/AdminDashBoard.css" text="Refresh">
+         <graphic>
+            <FontAwesomeIcon iconName="REFRESH" />
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

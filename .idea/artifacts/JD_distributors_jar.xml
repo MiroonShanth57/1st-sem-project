@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="JD distributors:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JD_distributors</output-path>
+    <root id="root">
+      <element id="module-output" name="JD distributors" />
+      <element id="archive" name="JD_Distributors.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+        </element>
+      </element>
+      <element id="library" level="project" name="mysql-connector-java-5.1.49" />
+    </root>
+  </artifact>
+</component>
